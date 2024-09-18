@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffd966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.receipt-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.receipt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    height: auto;
+    margin-right: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 16px;
+}
+
+.title-container {
+    text-align: right;
+}
+
+.title-container h1 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.title-container p {
+    color: #95a5a6;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.menu-table th, .menu-table td {
+    border: 1px solid #c5c4c4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu-table th {
+    background-color: #16537e;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.menu-table td img {
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.payment-method {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.payment-method h2 {
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.payment-method label {
+    margin: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.payment-method input {
+    margin-right: 5px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.footer ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .order-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .receipt-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title-container {
+        margin-top: 10px;
+    }
+}
